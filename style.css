@@ -1,0 +1,41 @@
+body {
+  margin: 10px;
+  background-color: whitesmoke;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+  background-color: lightgray;
+}
+
+img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-left: 20px;
+}
+
+@media (min-width: 800px) {
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  body {
+    margin: 60px;
+  }
+}
