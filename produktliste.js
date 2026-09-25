@@ -1,4 +1,4 @@
-const endpoint = "https://kea-alt-del.dk/t7/api/products";
+const endpoint = "https://kea-alt-del.dk/t7/api/products?limit=21";
 
 const productid = 123456;
 const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${productid}.webp`;
@@ -15,7 +15,7 @@ function visData(json) {
         <img src=https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp alt="produktbillede" />
             <h2>${element.productdisplayname}</h2>
             <h3>${element.brandname}</h3>
-            <p>${element.price}</p>
+            <p>kr. ${element.price},-</p>
             <p>${element.category}</p>
         </article>
         </a>`;
