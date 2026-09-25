@@ -3,6 +3,19 @@ body {
   background-color: whitesmoke;
 }
 
+nav {
+  background-color: lightgray;
+  height: 50px;
+
+  a {
+    color: black;
+    margin: 30px;
+  }
+  ul :hover {
+    text-decoration: underline;
+  }
+}
+
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -21,13 +34,6 @@ img {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-left: 20px;
 }
 
 a {
