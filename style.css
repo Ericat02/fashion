@@ -40,6 +40,20 @@ a {
   text-decoration: none;
 }
 
+/* styl på forside  */
+#catlisteContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  a {
+    padding: 2rem;
+    background-color: lightgray;
+    text-align: center;
+    color: inherit;
+  }
+}
+
 @media (min-width: 800px) {
   section {
     grid-template-columns: 1fr 1fr 1fr;
