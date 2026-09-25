@@ -7,12 +7,14 @@ body {
 
 nav {
   background-color: lightgray;
-  height: 60px;
-  align-items: center;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
 
   a {
     color: black;
     margin: 30px;
+    align-items: center;
   }
   ul :hover {
     text-decoration: underline;
@@ -24,7 +26,8 @@ a {
 }
 
 .logo {
-  width: 55px;
+  width: 65px;
+  align-items: center;
 }
 
 /* Produktliste */
@@ -67,6 +70,10 @@ section {
     text-align: center;
     color: inherit;
   }
+}
+
+#catlisteContainer :hover {
+  background-color: gray;
 }
 
 @media (min-width: 800px) {
