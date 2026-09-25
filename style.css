@@ -1,3 +1,5 @@
+/* general style */
+
 body {
   margin: 10px;
   background-color: whitesmoke;
@@ -16,17 +18,29 @@ nav {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+/* Produktliste */
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-article {
+.card {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 5;
   background-color: lightgray;
+
+  h2,
+  h3,
+  p {
+    color: black;
+    margin-left: 30px;
+  }
 }
 
 img {
@@ -34,10 +48,6 @@ img {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* styl på forside  */
