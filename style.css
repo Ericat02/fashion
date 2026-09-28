@@ -30,6 +30,10 @@ a {
   align-items: center;
 }
 
+footer {
+  background-color: lightgray;
+}
+
 /* Produktliste */
 section {
   display: grid;
@@ -81,7 +85,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  body {
+  main {
     margin: 60px;
   }
 }
