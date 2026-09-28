@@ -1,4 +1,21 @@
 /* general style */
+@font-face {
+  font-family: anton;
+  src: url(fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: rubrik;
+  src: url(fonts/Rubik-VariableFont_wght.ttf);
+}
+
+h2 {
+  font-family: anton;
+}
+
+p {
+  font-family: rubrik;
+}
 
 body {
   margin: 10px;
