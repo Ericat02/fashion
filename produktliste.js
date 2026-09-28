@@ -41,10 +41,13 @@ function visData(json) {
     <a href=produktdetaljer.html?id=${produkt.id} class=${produkt.soldout ? "udsolgt" : ""}> 
     <article class="card" >
     <img src=${`https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp`} alt="produktbillede">
+    <div class="tekst">
     <h2>${produkt.productdisplayname}</h2>
     <h3>${produkt.brandname}</h3>
+    ${produkt.discount ? "<p class=`tilbudslabel` >Tilbud</p>" : ""}
     <p>kr. ${produkt.price},-</p>
      <p>${produkt.subcategory} </p>
+     </div>
 
  </article>
 </a>`;
