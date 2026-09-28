@@ -1,0 +1,60 @@
+/* general style */
+
+body {
+  margin: 10px;
+  background-color: whitesmoke;
+}
+
+nav {
+  background-color: lightgray;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  a {
+    color: black;
+    margin: 30px;
+    align-items: center;
+  }
+  ul :hover {
+    text-decoration: underline;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 65px;
+  align-items: center;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+/* styling af side */
+
+article {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  color: black;
+}
+
+main {
+  margin: 60px;
+}
+
+#tilbageknap {
+}
+
+.tekst {
+  margin-left: 30px;
+  flex: 1;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+}

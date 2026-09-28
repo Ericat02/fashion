@@ -44,7 +44,7 @@ section {
 .card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 5;
   background-color: lightgray;
 
   h2,
