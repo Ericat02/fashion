@@ -50,18 +50,3 @@ function visData(json) {
 </a>`;
   });
 }
-
-// function visData(json) {
-//   json.forEach((produkt) => {
-//     produktliste.innerHTML += `
-//     <a href=produktdetaljer.html?id=${produkt.id} class=${produkt.soldout ? "udsolgt" : ""}
-//     <article class="card">
-//     <img src=${`https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp`} alt="produktbillede">
-//     <h2>${produkt.productdisplayname}</h2>
-//     <h3>${produkt.brandname}</h3>
-//     <p>kr. ${produkt.price},-</p>
-//      <p>${produkt.subcategory} </p>
-
-//  </article>
-// </a>`;
-//   });

@@ -44,7 +44,7 @@ section {
 .card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 5;
+  grid-row: span 3;
   background-color: lightgray;
 
   h2,
@@ -78,6 +78,12 @@ section {
 
 #catlisteContainer :hover {
   background-color: gray;
+}
+
+.udsolgt {
+  filter: grayscale(1);
+  opacity: 8;
+  pointer-events: none;
 }
 
 @media (min-width: 800px) {
