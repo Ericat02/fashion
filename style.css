@@ -24,12 +24,12 @@ body {
   background-color: whitesmoke;
 }
 
-nav {
-  /* font-family: anton;
+.header {
+  font-family: anton;
   background-color: lightgray;
   height: 100px;
   display: grid;
-  grid-template-columns: 1fr; */
+  grid-template-columns: 1fr;
 
   a {
     color: black;
