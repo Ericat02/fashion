@@ -33,6 +33,12 @@ const produktliste = document.querySelector(".produktliste");
 const h2 = document.querySelector("h2");
 h2.textContent = cat;
 
+document.querySelectorAll("#filter button").forEach((knap) => knap.addEventListener("click", filtere));
+
+function filtere(e) {
+  console.log(e.targets.textContent);
+}
+
 fetch(endpoint).then((res) => res.json().then(visData));
 
 function visData(json) {
