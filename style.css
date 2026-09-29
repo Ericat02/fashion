@@ -24,7 +24,7 @@ body {
   background-color: whitesmoke;
 }
 
-nav {
+.header {
   font-family: anton;
   background-color: lightgray;
   height: 100px;
@@ -61,11 +61,11 @@ section {
   gap: 2rem;
 }
 
-.beskrivelse {
+/* .beskrivelse {
   display: flex;
   flex-direction: column;
   margin: 0;
-}
+} */
 
 .card {
   position: relative;
@@ -87,6 +87,9 @@ section {
     margin: 0 auto;
     margin-top: 20px;
   }
+}
+
+.card :hover {
 }
 
 /* styl på forside  */
@@ -121,6 +124,11 @@ section {
   padding: 1rem;
   background-color: yellow;
   rotate: -20deg;
+}
+
+/* Filtrering */
+#filter {
+  margin: 10px;
 }
 
 @media (min-width: 800px) {
