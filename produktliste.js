@@ -6,6 +6,8 @@ const produktliste = document.querySelector(".produktliste");
 const h2 = document.querySelector("h2"); //vis bruger hvilken kategori der vises?
 h2.textContent = cat;
 
+const visantal = document.querySelector("#filter span");
+
 document.querySelectorAll("#filter button").forEach((knap) => knap.addEventListener("click", filtere));
 
 let alleData, udsnit;
@@ -30,6 +32,7 @@ function filtere(e) {
 }
 
 function visData(json) {
+  visantal.textContent = json.length;
   produktliste.innerHTML = "";
   json.forEach((produkt) => {
     const tilbudspris = Math.round(produkt.price - (produkt.price * produkt.discount) / 100);
