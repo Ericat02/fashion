@@ -23,6 +23,7 @@ function visData(element) {
             <h3>${element.brandname}</h3>
             <p>kr. ${element.price},-</p>
             <p>${element.category}</p>
+            <p>${element.description}</p>
         </div>
         </article>
         </a>`;

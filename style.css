@@ -89,6 +89,9 @@ section {
   }
 }
 
+.card :hover {
+}
+
 /* styl på forside  */
 #catlisteContainer {
   display: grid;

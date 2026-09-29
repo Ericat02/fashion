@@ -30,16 +30,16 @@ const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${cat}`;
 
 const produktliste = document.querySelector(".produktliste");
 
-const h2 = document.querySelector("h2");
+const h2 = document.querySelector("h2"); //vis bruger hvilken kategori der vises?
 h2.textContent = cat;
 
 document.querySelectorAll("#filter button").forEach((knap) => knap.addEventListener("click", filtere));
 
 function filtere(e) {
-  console.log(e.targets.textContent);
+  console.log(e.targets.textContent); //Hvad står der i den knap der bliver klikket på
 }
 
-fetch(endpoint).then((res) => res.json().then(visData));
+fetch(endpoint).then((res) => res.json().then((data) => visData(data)));
 
 function visData(json) {
   json.forEach((produkt) => {
