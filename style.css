@@ -25,11 +25,11 @@ body {
 }
 
 nav {
-  font-family: anton;
+  /* font-family: anton;
   background-color: lightgray;
   height: 100px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; */
 
   a {
     color: black;
@@ -61,11 +61,11 @@ section {
   gap: 2rem;
 }
 
-.beskrivelse {
+/* .beskrivelse {
   display: flex;
   flex-direction: column;
   margin: 0;
-}
+} */
 
 .card {
   position: relative;
@@ -121,6 +121,11 @@ section {
   padding: 1rem;
   background-color: yellow;
   rotate: -20deg;
+}
+
+/* Filtrering */
+#filter {
+  margin: 10px;
 }
 
 @media (min-width: 800px) {
