@@ -25,6 +25,7 @@ body {
 }
 
 nav {
+  font-family: anton;
   background-color: lightgray;
   height: 100px;
   display: grid;
@@ -60,7 +61,14 @@ section {
   gap: 2rem;
 }
 
+.beskrivelse {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .card {
+  position: relative;
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 5;
@@ -99,6 +107,7 @@ section {
   background-color: gray;
 }
 
+/* labeels med tilbud og udsolgt */
 .udsolgt {
   filter: grayscale(1);
   opacity: 8;
@@ -107,10 +116,11 @@ section {
 
 .tilbudslabel {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.3rem;
+  left: 0.2rem;
   padding: 1rem;
   background-color: yellow;
+  rotate: -20deg;
 }
 
 @media (min-width: 800px) {

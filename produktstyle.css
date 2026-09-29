@@ -12,6 +12,9 @@
 h2 {
   font-family: anton;
 }
+h3 {
+  font-family: anton;
+}
 
 p {
   font-family: rubrik;
@@ -23,6 +26,7 @@ body {
 }
 
 nav {
+  font-family: anton;
   background-color: lightgray;
   height: 100px;
   display: grid;

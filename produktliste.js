@@ -37,6 +37,8 @@ fetch(endpoint).then((res) => res.json().then(visData));
 
 function visData(json) {
   json.forEach((produkt) => {
+    const tilbudspris = Math.round(produkt.price - (produkt.price * produkt.discount) / 100);
+
     produktliste.innerHTML += `
     <a href=produktdetaljer.html?id=${produkt.id} class=${produkt.soldout ? "udsolgt" : ""}> 
     <article class="card" >
@@ -44,8 +46,15 @@ function visData(json) {
     <div class="tekst">
     <h2>${produkt.productdisplayname}</h2>
     <h3>${produkt.brandname}</h3>
-    ${produkt.discount ? "<p class=`tilbudslabel` >Tilbud</p>" : ""}
-    <p>kr. ${produkt.price},-</p>
+
+    ${
+      produkt.discount
+        ? `<p class="tilbudslabel" >-${produkt.discount}%</p>
+          <p> Før kr. ${produkt.price},- <br> Nu ${tilbudspris},-</p>`
+        : `<p>kr. ${produkt.price},-</p>`
+    }
+    
+    
      <p>${produkt.subcategory} </p>
      </div>
 
