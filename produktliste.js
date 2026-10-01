@@ -1,5 +1,5 @@
 const cat = new URLSearchParams(window.location.search).get("cat");
-const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${cat}`;
+const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${cat}&limit=30`;
 
 const produktliste = document.querySelector(".produktliste");
 
@@ -27,6 +27,21 @@ function filtere(e) {
     udsnit = alleData;
   } else {
     udsnit = alleData.filter((produkt) => produkt.gender == valgt);
+  }
+  visData(udsnit);
+}
+
+//sorterings kanpper
+document.querySelectorAll("#sortering button").forEach((knap) => knap.addEventListener("click", sorter));
+
+function sorter(e) {
+  const valgt = e.target.textContent; //hvad står der i knappen der bliver klikket på?
+  if (valgt == "Pris lav-høj") {
+    udsnit.sort((a, b) => a.price - b.price); //sorter efter pris
+  } else if (valgt == "Pris høj-lav") {
+    udsnit.sort((a, b) => b.price - a.price);
+  } else if (valgt == "A-Z") {
+    udsnit.sort((a, b) => a.productdisplayname.localeCompare(b.productdisplayname)); //sorter efter navn
   }
   visData(udsnit);
 }
