@@ -21,37 +21,62 @@ h3 {
 
 body {
   margin: 10px;
-  background-color: whitesmoke;
+  background-color: #f8f7f4;
 }
 
-.header {
+header {
   font-family: anton;
-  background-color: lightgray;
-  height: 100px;
-  display: grid;
-  grid-template-columns: 1fr;
+  padding: 20px 40px;
 
-  a {
-    color: black;
-    margin: 30px;
-    align-items: center;
-  }
-  ul :hover {
-    text-decoration: underline;
-  }
+  border-bottom: solid black 2px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.Kurv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.Kurv img {
+  width: 50px;
+  height: 50px;
+}
+
+.Kurv span {
+  font-size: 18px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 a {
   text-decoration: none;
 }
 
-.logo {
-  width: 65px;
-  align-items: center;
-}
-
 footer {
-  background-color: lightgray;
+  border-top: solid black 2px;
 }
 
 /* Produktliste */
@@ -89,25 +114,24 @@ section {
   }
 }
 
-.card :hover {
-}
-
 /* styl på forside  */
 #catlisteContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  font-family: rubrik;
 
   a {
     padding: 2rem;
     background-color: lightgray;
+
     text-align: center;
     color: inherit;
   }
 }
 
 #catlisteContainer :hover {
-  background-color: gray;
+  background-color: #2b4c6b;
 }
 
 /* labeels med tilbud og udsolgt */
@@ -128,7 +152,16 @@ section {
 
 /* Filtrering */
 #filter {
-  margin: 10px;
+  margin-bottom: 13px;
+}
+
+/* Sortering */
+#sortering {
+  margin-bottom: 13px;
+}
+
+#filter :hover {
+  background-color: lightgray;
 }
 
 @media (min-width: 800px) {
