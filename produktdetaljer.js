@@ -24,6 +24,7 @@ function visData(element) {
             <p>kr. ${element.price},-</p>
             <p>${element.category}</p>
             <p>${element.description}</p>
+             <button id="købsknap">Tilføj til kurv</button>
         </div>
         </article>
         </a>`;
