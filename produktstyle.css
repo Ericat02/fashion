@@ -9,8 +9,19 @@
   src: url(fonts/Rubik-VariableFont_wght.ttf);
 }
 
+main {
+  margin: 60px;
+}
+
+body {
+  margin: 10px;
+  /* background-color: #f8f7f4; */
+  background-color: #f5f3ef;
+}
+
 h1 {
   font-family: anton;
+  color: #2b4c6b;
 }
 
 p,
@@ -19,16 +30,11 @@ h3 {
   font-family: rubrik;
 }
 
-body {
-  margin: 10px;
-  background-color: #f8f7f4;
-}
-
 header {
   font-family: anton;
   padding: 20px 40px;
 
-  border-bottom: solid black 2px;
+  border-bottom: solid #2b4c6b 2px;
 }
 
 .header ul {
@@ -42,7 +48,7 @@ header {
 
 .header a {
   text-decoration: none;
-  color: black;
+  color: #2b4c6b;
 }
 
 .Kurv {
@@ -59,6 +65,7 @@ header {
 
 .Kurv span {
   font-size: 18px;
+  color: #2b4c6b;
 }
 
 header a {
@@ -76,7 +83,12 @@ a {
 }
 
 footer {
-  border-top: solid black 2px;
+  color: #2b4c6b;
+  border-top: solid #2b4c6b 2px;
+
+  h3 {
+    font-family: Anton;
+  }
 }
 
 /* styling af side */
@@ -84,7 +96,7 @@ article {
   margin-top: 20px;
   display: flex;
   align-items: flex-start;
-  color: black;
+  color: #1f2933;
 }
 
 main {
@@ -92,6 +104,10 @@ main {
 }
 
 #tilbageknap {
+  border: unset;
+  background-color: #2b4c6b;
+  color: #ffffff;
+  padding: 10px;
 }
 
 .tekst {
@@ -99,6 +115,21 @@ main {
   flex: 1;
 }
 
+#købsknap {
+  border: unset;
+  color: #1f2933;
+  background-color: #2b4c6b;
+  color: #ffffff;
+  padding: 15px 50px;
+  grid-column: 1;
+  font-family: rubrik;
+}
+
+#købsknap :hover {
+  ackground-color: #2b4c6b;
+  opacity: 0.7;
+}
+
 h2 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #2b4c6b;
 }
